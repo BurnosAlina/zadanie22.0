@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">Wycieczki z Chudą</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<header class="header">
+    <img th:src="@{/hawaii.jpg}" alt="Obrazek hawaii">
+    <h1 class="headerText">Wycieczki z Chuda!</h1>
+</header>
+
+<main layout:fragment="content">
+</main>
+
+<footer class="footer">
+    <p>Copyright &copy; 2023 Wycieczki z Chudą</p>
+</footer>
+</body>
+</html>
