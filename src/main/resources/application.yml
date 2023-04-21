@@ -1,10 +1,6 @@
 spring:
   mail:
-    host: smtp.poczta.onet.pl
-    port: 465
-    username: example1@op.pl
-    password: Haslo1234?
-    properties:
-      mail.smtp.ssl.enable: true
-      smtp:
-        auth: true
+    host: mailpit.javastart.pl
+    port: 1025
+    username: user
+    password: 123

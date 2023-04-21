@@ -15,10 +15,16 @@ public class MailService {
 
     public void send(String name, String email, String mailText) {
         SimpleMailMessage mail = new SimpleMailMessage();
+        mail.setSubject("Wiadomość od użytkownika " + name);
         mail.setTo("example1@op.pl");
         mail.setText(mailText);
         mail.setFrom(name);
         mail.setReplyTo(email);
         javaMailSender.send(mail);
+        SimpleMailMessage confirmationMail = new SimpleMailMessage();
+        confirmationMail.setTo(email);
+        confirmationMail.setSubject("Potwierdzenie wysłania zapytania");
+        confirmationMail.setText("Dziękujemy za wysłanie zapytania. Odpowiemy wkrótce.");
+        javaMailSender.send(confirmationMail);
     }
 }
