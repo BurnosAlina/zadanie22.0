@@ -1,0 +1,57 @@
+body {
+    margin: 0px;
+}
+.header {
+    display: flex;
+    height: 170px;
+    background-color: grey;
+}
+.headerText {
+    font-size: 70px;
+}
+
+.header img {
+    width: 300px;
+    margin-right: 200px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 15px;
+    background-color: grey;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+.description {
+    margin: 25px 50px 25px 50px;
+}
+
+.contact {
+    text-align: center;
+    font-size: 50px;
+}
+.mailForm {
+    text-align: center;
+}
+
+.input-group {
+    margin: 15px;
+}
+
+.form-control {
+    width: 200px;
+    height: 30px;
+}
+
+.form-control2 {
+    width: 300px;
+    height: 200px;
+}

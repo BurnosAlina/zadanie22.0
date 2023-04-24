@@ -1,0 +1,6 @@
+spring:
+  mail:
+    host: mailpit.javastart.pl
+    port: 1025
+    username: user
+    password: 123
